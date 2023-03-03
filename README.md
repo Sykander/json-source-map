@@ -6,9 +6,8 @@ _note: This project is a fork of [json-source-map](https://github.com/epoberezki
 ## Install
 
 ```bash
-npm install json-source-map
+npm install jsonc-source-map
 ```
-
 
 ## Possible use cases
 
@@ -20,13 +19,12 @@ When a domain-specific language that compiles to JavaScript uses JSON as a forma
 
 When a form also allows to edit JSON representation of data on the same screen, this module can be used to sinchronise navigation in JSON and in the form.
 
-
 ## Usage
 
 #### Stringify
 
 ```javascript
-var jsonMap = require('json-source-map');
+var jsonMap = require('jsonc-source-map');
 var result = jsonMap.stringify({ foo: 'bar' }, null, 2);
 console.log('json:');
 console.log(result.json);
@@ -53,7 +51,6 @@ pointers:
      valueEnd: { line: 1, column: 14, pos: 16 } } }
 ```
 
-
 #### Parse
 
 ```javascript
@@ -79,7 +76,6 @@ pointers:
      value: { line: 0, column: 9, pos: 9 },
      valueEnd: { line: 0, column: 14, pos: 14 } } }
 ```
-
 
 ## API
 
@@ -128,8 +124,3 @@ Comparison with the standard `JSON.stringify`:
 Options:
 - _space_: same as `space` parameter.
 - _es6_: stringify ES6 Maps, Sets and Typed arrays (as JSON arrays).
-
-
-## License
-
-[MIT](https://github.com/epoberezkin/json-source-map/blob/master/LICENSE)
